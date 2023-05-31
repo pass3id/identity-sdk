@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 400px;
+      max-height: 90%;
+      width: 90%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      overflow: scroll;
+    }
+    
+    .btn-login {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <title>Pass3 OI4VP Demo</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Credential</h2>
+    <a href="{{ linkURL }}"><button class="btn-login">{{ linkLabel }}</button></a>
+    <pre style="word-wrap: break-word;">{{ credential }}</pre>
+  </div>
+</body>
+</html>
